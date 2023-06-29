@@ -25,8 +25,8 @@ La arquitectura hexagonal, también conocida como Puertos y Adaptadores, es un p
 ## Rutas de la API
 A continuación se enumeran las rutas de la API con sus métodos HTTP correspondientes y ejemplos de entrada:
 
-**Crear una tarea**
-Método: POST
+Crear una tarea
+**Método: POST**
 Ruta: /api/tasks
 Input: JSON con la información de la tarea (title, description y completed)
 json
