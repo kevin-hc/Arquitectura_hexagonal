@@ -73,7 +73,7 @@ Puedes utilizar herramientas como Postman o cURL para probar estas rutas. Asegú
 **Entidades del dominio**
 Dentro de la capa de dominio, se definen las entidades del negocio que representan los conceptos clave de la aplicación. En el contexto de esta aplicación de gestión de tareas, podríamos tener la siguiente entidad:
 
-Tarea: Representa una tarea con sus atributos como el título, descripción y estado de completitud.
+**Tarea:** Representa una tarea con sus atributos como el título, descripción y estado de completitud.
 python
 Copy code
 class Task:
@@ -81,10 +81,10 @@ class Task:
         self.title = title
         self.description = description
         self.completed = completed
-Casos de uso
+**Casos de uso**
 Los casos de uso definen las acciones o funcionalidades que la aplicación puede realizar. Estos casos de uso se encuentran en la capa de aplicación y se comunican con los puertos de entrada y salida. Aquí hay algunos ejemplos de casos de uso para la aplicación de gestión de tareas:
 
-Crear tarea: Permite crear una nueva tarea en el sistema.
+**Crear tarea:** Permite crear una nueva tarea en el sistema.
 Obtener tarea por ID: Recupera una tarea específica basada en su ID.
 Obtener todas las tareas: Obtiene una lista de todas las tareas registradas en el sistema.
 Actualizar tarea: Actualiza los atributos de una tarea existente.
@@ -92,14 +92,14 @@ Eliminar tarea: Elimina una tarea del sistema.
 Adaptadores de puertos de entrada
 Los adaptadores de puertos de entrada se encargan de recibir las solicitudes externas y dirigirlas hacia los casos de uso correspondientes. En el contexto de la aplicación de gestión de tareas, los adaptadores de puertos de entrada podrían ser implementados como controladores de una API REST.
 
-**Adaptadores de puertos de salida**
+## Adaptadores de puertos de salida
 Los adaptadores de puertos de salida se encargan de interactuar con la infraestructura externa, como bases de datos o servicios externos, en nombre de los casos de uso. En el caso de la aplicación de gestión de tareas, los adaptadores de puertos de salida podrían ser responsables de almacenar y recuperar las tareas en una base de datos.
 
-**Servicios externos**
+## Servicios externos
 La aplicación de gestión de tareas también puede interactuar con servicios externos para obtener información adicional sobre las tareas. Por ejemplo, podría conectarse a un servicio de clima para obtener la información meteorológica asociada a una tarea.
 
-**Pruebas de integración**
+## Pruebas de integración
 Es importante realizar pruebas de integración para asegurar el correcto funcionamiento de la aplicación en su conjunto. Estas pruebas verifican que los diferentes componentes de la arquitectura hexagonal interactúen correctamente entre sí y con los servicios externos. Se pueden utilizar herramientas de pruebas como pytest para implementar pruebas de integración.
 
-**Conclusiones**
+## Conclusiones
 La arquitectura hexagonal proporciona un enfoque estructurado para el diseño de aplicaciones, fomentando la separación de responsabilidades y facilitando el mantenimiento y escalabilidad del software. Al seguir esta arquitectura, la aplicación de gestión de tareas logra una mayor modularidad, lo que permite realizar cambios y extensiones de manera más sencilla y sin afectar otras partes del sistema.
